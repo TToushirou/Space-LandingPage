@@ -1,0 +1,91 @@
+@use '../util' as *;
+
+// Laptop 1024px > desktop 1440 - Header Styles
+.primary-header {
+    @include breakpoint(large){
+        padding-top: rem(40) !important;
+
+        &--logo {
+            margin-right: rem(60);
+        }
+
+        // nav links styling 
+        .nav-links{
+            font-family: var(--f-BarC);
+            text-transform: uppercase;
+            list-style-type: none;
+            width: 60vh;
+            height: 100%;
+            
+        
+            &__li {
+                margin-bottom: rem(0);
+                margin-left: rem(5);
+                letter-spacing: rem(2.7);
+                line-height: rem(19);
+                padding: var(--underline-gap, 1rem) rem(25);
+                border-bottom: .2rem solid var(--clr-whiteOP0);
+            }
+        
+            .active {
+                border-color: var(--clr-white) !important;
+            }
+        
+            &__li:hover,:focus {
+                border-color: var(--clr-white0P5);
+            }
+        
+            &__a {
+                text-decoration: none;
+                color: var(--clr-white);
+            }
+        
+            .number {
+                visibility: visible;
+                position: relative;
+                font-weight: bold;
+                line-height: rem(19);
+                margin-right: rem(10) !important;
+            }
+        }
+    }
+}
+
+
+// Wrapper Helper Styling For Grid 
+.wrapper {
+    @include breakpoint(large){
+        display: grid;
+        height: 70vh;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+
+        .content {
+        max-width: rem(450);
+        &--header {
+            color: var(--clr-light);
+            font-family: var(--f-BarC);
+            font-size: rem(24);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: rem(4.75);;
+        }
+        span {
+            color: var(--clr-white);
+            font-family: var(--f-BelF);
+            font-size: rem(120);
+            line-height: rem(200);
+        }
+
+        &--body {
+            padding: rem(0) rem(10) rem(20) rem(10);
+            margin: rem(0) rem(25) rem(0) rem(20);
+            font-size: rem(17);
+        }  
+        }
+
+        .flex {
+            margin-top: rem(200);
+        }
+    }
+}

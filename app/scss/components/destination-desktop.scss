@@ -1,0 +1,123 @@
+@use '../util' as *;
+
+
+// Section Global Style for Laptop > 
+section {
+    span {
+        color: var(--clr-light) !important;
+        margin-right: rem(20);
+        font-weight: bold;
+    }
+    @include breakpoint(large){
+        // Display is left side content 
+        .display {
+        &__header {
+            font-family: var(--f-BarC) !important;
+            font-size: rem(26);
+            color: var(--clr-white);
+            text-transform: uppercase;
+            letter-spacing: rem(4);
+            text-align: start;
+        }
+        &__img {
+            width: rem(445) !important;
+            height: rem(445) !important;
+            margin: rem(50) rem(0) rem(0) rem(80);
+            padding-bottom: rem(100);
+        }
+        }
+
+        // Tabs for Changing Content of the Page
+        .tabs {
+            display: flex;
+            color: var(--clr-light);
+            font-family: var(--f-BarC);
+            text-transform: uppercase;
+            letter-spacing: rem(3);
+            list-style-type: none;
+            padding-left: rem(5);
+
+            &__li {
+                margin-right: rem(20);
+                letter-spacing: rem(2.7);
+                line-height: rem(19);
+                padding: var(--underline-gap, .3rem) 0;
+                border-bottom: .2rem solid var(--clr-whiteOP0);
+            }
+
+            .active {
+                border-color: var(--clr-white) !important;
+            }
+        
+            &__li:hover,:focus {
+                border-color: var(--clr-white0P5);
+            }
+        
+            &__a {
+                text-decoration: none;
+                color: var(--clr-white);
+            }
+        }
+
+
+        // Planets right side content 
+        .planets {
+        min-height: rem(500)!important;
+        &__header {
+            font-size: rem(100) !important;
+            font-family: var(--f-BelF);
+            text-transform: uppercase;
+            margin-top: rem(25);
+            text-align: center;
+        }
+        &__content {
+            font-size: rem(18);
+            color: var(--clr-light);
+            line-height: rem(32);
+            margin-bottom: rem(50);
+        }
+        &__flex{
+            display: flex;
+        }
+
+        .line {
+            display: block;
+            border-bottom: rem(.5) solid var(--clr-whiteOP3);
+            margin-bottom: rem(30);
+        }
+
+        &--distance1 {
+            font-size: rem(14)!important;
+            color: var(--clr-light);
+            font-family: var(--f-BarC);
+            letter-spacing: rem(2.4);
+            text-transform: uppercase;
+            margin-right: rem(100);
+        }
+
+        &--distance2 {
+            font-size: rem(24);
+            font-family: var(--f-BelF);
+            text-transform: uppercase;
+            margin: 0;
+        }
+        &--time1 {
+            font-size: rem(14)!important;
+            color: var(--clr-light);
+            font-family: var(--f-BarC);
+            letter-spacing: rem(2.4);
+            text-transform: uppercase;
+        }
+
+        &--time2 {
+            font-size: rem(24);
+            font-family: var(--f-BelF);
+            text-transform: uppercase;
+            margin: 0 !important;
+        }
+        }
+
+    }
+}
+
+

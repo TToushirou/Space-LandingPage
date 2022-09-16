@@ -1,0 +1,111 @@
+@use '../util' as *;
+
+html {
+	font-size: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+body {
+	background-color: var(--clr-dark)!important;
+	color: var(--clr-white) !important;
+    line-height: 1.5;
+    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+
+#home {
+	background-size: cover;
+	background-position: bottom center;
+	background-image: url(/assets/home/background-home-mobile.jpg);
+
+	@include breakpoint(small) {
+		background-position: center center;
+		background-image: url(/assets/home/background-home-tablet.jpg);
+		background-repeat: no-repeat;
+	}
+
+	@include breakpoint(large) {
+		background-image: url(/assets/home/background-home-desktop.jpg);
+	}
+}
+
+#destination {
+	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-image: url(/assets/destination/background-destination-mobile.jpg);
+
+	@include breakpoint(small) {
+		background-repeat: no-repeat !important;
+		background-image: url(/assets/destination/background-destination-tablet.jpg);
+	}
+
+	@include breakpoint(large) {
+		background-repeat: no-repeat !important;
+		background-image: url(/assets/destination/background-destination-desktop.jpg);
+	}
+}
+
+#crew {
+	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-image: url(/assets/crew/background-crew-tablet.jpg);
+
+	@include breakpoint(small) {
+		background-repeat: no-repeat !important;
+		background-image: url(/assets/crew/background-crew-tablet.jpg);
+	}
+
+	@include breakpoint(large) {
+		background-repeat: no-repeat !important;
+		background-image: url(/assets/crew/background-crew-desktop.jpg);
+	}
+}
+
+#technology {
+	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-image: url(/assets/technology/background-technology-mobile.jpg);
+
+	@include breakpoint(small) {
+		background-repeat: no-repeat !important;
+		background-image: url(/assets/technology/background-technology-tablet.jpg);
+	}
+
+	@include breakpoint(large) {
+		background-repeat: no-repeat !important;
+		background-image: url(/assets/technology/background-technology-desktop.jpg);
+	}
+
+}
+
+
+
+.bg-dark { background-color: var(--clr-dark);}
+.bg-accent { background-color: var(--clr-light);}
+.bg-white { background-color: var(--clr-white);}
+
+.text-dark { color: var(--clr-dark);}
+.text-accent { color: var(--clr-light);}
+.text-white { color: var(--clr-white);}

@@ -1,0 +1,191 @@
+@use '../util' as *;
+
+
+
+.wrapper3{
+    display: inline-grid;
+    place-items: center;
+    text-align: center;
+    margin-top: rem(50);
+}
+
+
+// Mobile design 320px 425px 
+section {
+    @include breakpoint-down(small){    
+        .display2 {
+            margin-top: rem(40) !important;
+            &__img {
+                width: 100%;
+                height: rem(170);
+                margin-top: rem(30) !important;
+            }
+
+            &__imgDT {
+                display: none;
+            }
+    
+            &__header {
+                font-family: var(--f-BarC);
+                font-size: rem(19);
+                margin: 0;
+                text-align: center;
+                letter-spacing: rem(2.7);
+                text-transform: uppercase;
+            }
+        }
+
+        .dots2 {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+
+
+            .active {
+                background-color: var(--clr-white) !important;
+                color: var(--clr-dark);
+            }
+            
+            button {
+                background-color: transparent;
+                color: var(--clr-white);
+                font-family: var(--f-BelF);
+                font-size: rem(22);
+                letter-spacing: rem(2);
+                line-height: rem(1);
+                border-radius: 70%;
+                border: 1px solid var(--clr-whiteOP3);
+                padding: rem(20);
+                margin: rem(10);
+                width: rem(50);
+                height: rem(50);
+            }
+
+            button:hover,:focus {
+                background-color: var(--clr-white0P5);
+            }
+
+        }
+
+        .about2 {
+            
+            &__title {
+                color: var(--clr-light);
+                font-size: rem(16);
+                font-family: var(--f-BarC);
+                text-transform: uppercase;
+                letter-spacing: rem(2.3);
+
+                margin-top: rem(25);
+            }
+
+            &__name {
+                color: var(--clr-white);
+                font-size: rem(24);
+                font-family: var(--f-BelF);
+                text-transform: uppercase;
+                margin-bottom: rem(10);
+            }
+
+            &__text {
+                color: var(--clr-light);
+                line-height: rem(25);
+                padding: rem(10);
+                margin-bottom: rem(20);
+            }
+
+        }
+    
+    }
+}
+
+section {
+    @include breakpoint-down(medium){    
+        .display2 {
+            margin-top: rem(40) !important;
+            &__img {
+                width: 100%;
+                height: auto;
+                margin-top: rem(30) !important;
+            }
+
+            &__imgDT {
+                display: none;
+            }
+            
+    
+            &__header {
+                font-family: var(--f-BarC);
+                font-size: rem(22);
+                margin-left: rem(40);
+                text-align: start;
+                letter-spacing: rem(2.7);
+                text-transform: uppercase;
+            }
+        }
+
+        .dots2 {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+
+
+            .active {
+                background-color: var(--clr-white) !important;
+                color: var(--clr-dark);
+            }
+            
+            button {
+                background-color: transparent;
+                color: var(--clr-white);
+                font-family: var(--f-BelF);
+                font-size: rem(22);
+                letter-spacing: rem(2);
+                line-height: rem(1);
+                border-radius: 70%;
+                border: 1px solid var(--clr-whiteOP3);
+                padding: rem(20);
+                margin: rem(10);
+                width: rem(50);
+                height: rem(50);
+            }
+
+            button:hover,:focus {
+                background-color: var(--clr-white0P5);
+            }
+
+        }
+
+        .about2 {
+            
+            &__title {
+                color: var(--clr-light);
+                font-size: rem(16);
+                font-family: var(--f-BarC);
+                text-transform: uppercase;
+                letter-spacing: rem(2.3);
+
+                margin-top: rem(25);
+            }
+
+            &__name {
+                color: var(--clr-white);
+                font-size: rem(40);
+                font-family: var(--f-BelF);
+                text-transform: uppercase;
+                margin-bottom: rem(10);
+            }
+
+            &__text {
+                color: var(--clr-light);
+                line-height: rem(25);
+                padding: rem(10);
+                margin-bottom: rem(20);
+                padding-left: rem(100);
+                padding-right: rem(100);
+            }
+
+        }
+    
+    }
+}

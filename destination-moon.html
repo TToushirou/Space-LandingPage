@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+    rel="stylesheet">
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      
+    <!--My CSS & JS lib CSS-->
+    <link rel="stylesheet" href="/dist/style.css">
+
+</head>
+<body id="destination">
+  <!--Header logo-->
+  <header class="primary-header">
+    <div class="primary-header__logo">
+      <img class="primary-header--logo" src="./assets/shared/logo.svg" alt="page logo">
+    </div>
+    <div class="line">
+    </div>
+    <!--Nav Section-->
+    <nav class="navbar navbar-expand-md">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggle-icon"></span>
+      </button>
+        <ul class="nav-links primary-navigation underline-indicators" id="navbar" data-visible="false" >
+          <li class="nav-links__li"><a class="nav-links__a"  href="index.html"><span class="number">00</span>Home</a>
+          <li class="nav-links__li active"><a class="nav-links__a"  href="./destination-moon.html"><span class="number">01</span>Destination</a>
+          <li class="nav-links__li"><a class="nav-links__a"  href="./crew-commander.html"><span class="number">02</span>Crew</a>
+          <li class="nav-links__li"><a class="nav-links__a"  href="./technology-vehicle.html"><span class="number"> 03</span>Technology</a>
+        </ul>
+    </nav>
+  </header>
+  <!--Page Content Wrapper-->
+  <main class="wrapper">
+    <!--Display Section-->
+    <section class="display">
+      <h1 class="display__header"> <span class="01">01</span>Pick your destination</h1>
+      <img hidden class="display__img" src="assets/destination/image-moon.png" alt="The Moon">
+      <img class="display__img" src="assets/destination/image-mars.png" alt="Mars">
+      <img hidden class="display__img" src="assets/destination/image-europa.png" alt="Europa">
+      <img hidden class="display__img" src="assets/destination/image-titan.png" alt="Titan">
+    </section>
+    <!--Tabs Section-->
+    <section  class="content">
+      <ul class="tabs">
+        <li class="tabs__li active">Moon</li>
+        <li class="tabs__li">Mars</li>
+        <li class="tabs__li">Europa</li>
+        <li class="tabs__li">Titan</li>
+      </ul>
+      <!--Moon Section-->
+      <div hidden class="planets">
+        <h2 class="planets__header">Moon</h2>
+        <p class="planets__content">See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+          regain perspective and come back refreshed. While you’re there, take in some history 
+          by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+        <div class=line>
+        </div>
+        <div class="planets__flex">
+          <div class="planets__distance">
+            <h3 class="planets--distance1">
+              Avg. distance
+              </h3>
+              <p class="planets--distance2">
+                384,400 km
+              </p>
+          </div>
+          <div class="planets__time">
+            <h3 class="planets--time1">
+              Est. travel time 
+            </h3>
+            <p class="planets--time2">
+              3 days
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Mars Section-->
+      <div class="planets">
+        <h2 class="planets__header">Mars</h2>
+        <p class="planets__content">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+          the tallest planetary mountain in our solar system. It’s two and a half times 
+          the size of Everest!
+        </p>
+        <div class=line>
+        </div>
+        <div class="planets__flex">
+          <div class="planets__distance">
+            <h3 class="planets--distance1">
+              Avg. distance
+              </h3>
+              <p class="planets--distance2">
+                225 mil. km
+              </p>
+          </div>
+          <div class="planets__time">
+            <h3 class="planets--time1">
+              Est. travel time 
+            </h3>
+            <p class="planets--time2">
+              9 months
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Europa Section-->
+      <div hidden class="planets">
+        <h2 class="planets__header">Europa</h2>
+        <p class="planets__content">
+          The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+          winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+          ice skating, curling, hockey, or simple relaxation in your snug 
+          wintery cabin.
+        </p>
+        <div class=line>
+        </div>
+        <div class="planets__flex">
+          <div class="planets__distance">
+            <h3 class="planets--distance1">
+              Avg. distance
+              </h3>
+              <p class="planets--distance2">
+                628 mil. km
+              </p>
+          </div>
+          <div class="planets__time">
+            <h3 class="moon--time1">
+              Est. travel time 
+            </h3>
+            <p class="planets--time2">
+              3 years
+            </p>
+          </div>
+        </div>
+      </div>   
+      <!--Titan Section-->
+      <div hidden class="planets">
+        <h2 class="planets__header">Titan</h2>
+        <p class="planets__content">The only moon known to have a dense atmosphere other than Earth, Titan 
+          is a home away from home (just a few hundred degrees colder!). As a 
+          bonus, you get striking views of the Rings of Saturn.
+        </p>
+        <div class=line>
+        </div>
+        <div class="planets__flex">
+          <div class="planets__distance">
+            <h3 class="planets--distance1">
+              Avg. distance
+              </h3>
+              <p class="planets--distance2">
+                1.6 bil. km
+              </p>
+          </div>
+          <div class="planets__time">
+            <h3 class="moon--time1">
+              Est. travel time 
+            </h3>
+            <p class="planets--time2">
+              7 years
+            </p>
+          </div>
+        </div>
+      </div>           
+    </section>
+  </main>
+<script defer src="/dist/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</body>
+</html>
+
+
+
+
+
+
+
+  
+
+

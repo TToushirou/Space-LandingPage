@@ -1,0 +1,238 @@
+
+@use '../util' as *;
+
+section {
+    //mobile design - 320px to 425px 
+    @include breakpoint-down(small) {
+        .display {
+            height: rem(300) !important;
+
+            &__header {
+                font-family: var(--f-BarC) !important;
+                font-size: rem(19) !important;
+                margin: 0 !important;
+                text-align: center !important;
+                letter-spacing: rem(2.7) !important;
+                text-transform: uppercase;
+            }
+
+            &__img {
+                height: rem(170) !important;
+                width: rem(170) !important;
+                margin-top: rem(30) !important;
+                margin-left: rem(0) !important;
+                padding: 0 !important;
+            }
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            color: var(--clr-light);
+            font-family: var(--f-BarC);
+            text-transform: uppercase;
+            letter-spacing: rem(3);
+            list-style-type: none;
+            padding-left: rem(5);
+
+            &__li {
+                margin-right: rem(20);
+                letter-spacing: rem(2.7);
+                line-height: rem(19);
+                padding: var(--underline-gap, .3rem) 0;
+                border-bottom: .2rem solid var(--clr-whiteOP0);
+            }
+
+            .active {
+                border-color: var(--clr-white) !important;
+            }
+        
+            &__li:hover,:focus {
+                border-color: var(--clr-white0P5);
+            }
+        
+            &__a {
+                text-decoration: none;
+                color: var(--clr-white);
+            }
+        }
+
+        .planets {
+            &__header {
+                font-size: rem(55) !important;
+                font-family: var(--f-BelF);
+                text-transform: uppercase;
+            }
+
+            &__content{
+                color: var(--clr-light);
+                font-size: rem(15) !important;
+                line-height: rem(25) !important;
+                margin-bottom: rem(30) !important;
+            }
+
+            .line {
+                display: block;
+                border-bottom: rem(.5) solid var(--clr-whiteOP3);
+                margin-bottom: rem(30);
+            }
+
+            &__flex {
+                display: flex;
+                flex-direction: column !important;
+            }
+        
+
+            
+        &--distance1 {
+            font-size: rem(14)!important;
+            color: var(--clr-light);
+            font-family: var(--f-BarC);
+            letter-spacing: rem(2.4);
+            text-transform: uppercase;
+            margin-right: 0 !important;
+        }
+
+        &--distance2 {
+            font-size: rem(24);
+            font-family: var(--f-BelF);
+            text-transform: uppercase;
+            margin-bottom: rem(30) !important;
+        }
+        &--time1 {
+            font-size: rem(14)!important;
+            color: var(--clr-light);
+            font-family: var(--f-BarC);
+            letter-spacing: rem(2.4);
+            text-transform: uppercase;
+        }
+
+        &--time2 {
+            font-size: rem(24);
+            font-family: var(--f-BelF);
+            text-transform: uppercase;
+            margin: 0 !important;
+        }
+
+        }
+    }
+}
+
+section {
+    @include breakpoint(medium) {
+        .display {
+            width: 100% !important;
+
+            &__header {
+                font-family: var(--f-BarC) !important;
+                font-size: rem(24) !important;
+                letter-spacing: rem(3.7) !important;
+                text-transform: uppercase;
+            }
+
+            &__img {
+                width: 80%;
+                height: auto;
+                margin-top: rem(40) !important;
+                margin-left: rem(0) !important;
+                padding: 0 !important;
+            }
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            color: var(--clr-light);
+            font-family: var(--f-BarC);
+            text-transform: uppercase;
+            letter-spacing: rem(3);
+            list-style-type: none;
+            padding-left: rem(5);
+
+            &__li {
+                margin-right: rem(20);
+                letter-spacing: rem(2.7);
+                line-height: rem(19);
+                padding: var(--underline-gap, .3rem) 0;
+                border-bottom: .2rem solid var(--clr-whiteOP0);
+            }
+
+            .active {
+                border-color: var(--clr-white) !important;
+            }
+        
+            &__li:hover,:focus {
+                border-color: var(--clr-white0P5);
+            }
+        
+            &__a {
+                text-decoration: none;
+                color: var(--clr-white);
+            }
+        }
+
+        .planets {
+            &__header {
+                font-size: rem(80) !important;
+                font-family: var(--f-BelF);
+                text-transform: uppercase;
+            }
+
+            &__content{
+                color: var(--clr-light);
+                font-size: rem(15) !important;
+                line-height: rem(25) !important;
+                padding-left: rem(65);
+                padding-right: rem(65);
+                margin-bottom: rem(30) !important;
+            }
+
+            .line {
+                display: block;
+                border-bottom: rem(.5) solid var(--clr-whiteOP3);
+                margin-bottom: rem(30);
+            }
+
+            &__flex {
+                display: flex;
+                flex-direction: row !important;
+                justify-content: center;
+            }
+
+            &__distance {
+                margin-right: rem(80);
+            }
+
+            
+        &--distance1 {
+            font-size: rem(14)!important;
+            color: var(--clr-light);
+            font-family: var(--f-BarC);
+            letter-spacing: rem(2.4);
+            text-transform: uppercase;
+            margin-right: 0 !important;
+        }
+
+        &--distance2 {
+            font-size: rem(24);
+            font-family: var(--f-BelF);
+            text-transform: uppercase;
+            margin-bottom: rem(30) !important;
+        }
+        &--time1 {
+            font-size: rem(14)!important;
+            color: var(--clr-light);
+            font-family: var(--f-BarC);
+            letter-spacing: rem(2.4);
+            text-transform: uppercase;
+        }
+
+        &--time2 {
+            font-size: rem(24);
+            font-family: var(--f-BelF);
+            text-transform: uppercase;
+            margin: 0 !important;
+        }
+    }
+}
+}

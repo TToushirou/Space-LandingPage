@@ -1,0 +1,111 @@
+@use '../util' as *;
+
+@include breakpoint(large){
+    .wrapper3 {
+        height: 50vh;
+        width: 100%;
+        display: grid;
+        margin: rem(40);
+        grid-template-areas: 
+        "header header . ."
+        "content . display display"
+        "content . display display";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .header {
+        padding-top: rem(85);
+    }
+
+    .dots2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        display: flex;
+        grid-area: content;
+    }
+
+    .display2 {
+
+        &__img {
+            display: none;
+        }
+
+        &__imgDT {
+            width: 75%;
+        }
+    }
+
+    
+    .dots2 {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        margin-right: rem(45);
+
+
+        .active {
+            background-color: var(--clr-white) !important;
+            color: var(--clr-dark);
+        }
+        
+        button {
+            background-color: transparent;
+            color: var(--clr-white);
+            font-family: var(--f-BelF);
+            font-size: rem(22);
+            letter-spacing: rem(2);
+            line-height: rem(1);
+            border-radius: 70%;
+            border: 1px solid var(--clr-whiteOP3);
+            padding: rem(20);
+            margin: rem(10);
+            width: rem(50);
+            height: rem(50);
+        }
+
+        button:hover,:focus {
+            background-color: var(--clr-white0P5);
+        }
+
+    }
+
+    .about2 {
+            
+        &__title {
+            color: var(--clr-light);
+            font-size: rem(16);
+            font-family: var(--f-BarC);
+            text-transform: uppercase;
+            letter-spacing: rem(2.3);
+
+            margin-top: rem(25);
+        }
+
+        &__name {
+            color: var(--clr-white);
+            font-size: rem(40);
+            font-family: var(--f-BelF);
+            text-transform: uppercase;
+            margin-bottom: rem(10);
+        }
+
+        &__text {
+            color: var(--clr-light);
+            line-height: rem(25);
+            margin-bottom: rem(20);
+        }
+
+    }
+
+    .display2 {
+        &__img {
+            width: 100%;
+            height: auto;
+            margin-top: rem(30) !important;
+        }
+    }
+}
